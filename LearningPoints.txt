@@ -1,0 +1,9 @@
+What I've Learned
+
+1. Register-Level Programming: Instead of relying on abstract libraries, I configured TM4C microcontroller by directly manipulating hardware registers (UART, TIMER, and memory-mapped bit-banded address).
+
+2. Mixed-Signal Hardware Integration: Not only writing code; I designed and soldered an external analog interface circuit. I used an IR333- LED emitter, a TSOP receiver, and transistor gating logic to modulate a baseband UART signal onto a 38kHz PWM carrier wave.
+
+3. Real-Time Interrupt-Driven Architecture: I solved a massive timing conflict. PC terminal communicates at 115,200 baud, while optical IR link is constrained to a slow 300 baud. A blocking design would freeze CPU. I implemented asynchronous, nested interrupt structure with prioritized execution to guarantee zero dropped frames during full-duplex operation.
+
+4. In-Circuit Diagnostics & Debugging: I leveraged hardware-in-the-loop debugging by mapping software states to physical signals- such as toggling an on-board LED inside the ISR to profile latency on an oscilloscope.
