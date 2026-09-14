@@ -5,6 +5,8 @@ FINAL PROJECT/ 25FALL UTA
 **Platform:** TI Tiva C TM4C123GXL LaunchPad (ARM Cortex-M4F)
 **Language:** C (Direct Register Manipulation)
 
+<img width="2882" height="2670" alt="Demo_pic" src="https://github.com/user-attachments/assets/3141ab10-cdaa-4610-a887-b65e3efbc5b7" />
+
 ## Project Overview
 This project establishes a robust, full-duplex wireless optical communication link between two TM4C microcontroller using IR transmission. The system bridges a high-speed PC terminal interface with a low-speed optical link, handling asynchronous data transfer, custom packet parsing, and real-time error detection via a completely interrupt-driven firmware architecture.
 
